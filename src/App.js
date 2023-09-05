@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MainHeader from "./octoHeader";
+import ProductComponent from "./productComponent.js";
+import LandingPageComponent from "./landingPageComponent.js"
 
+
+
+//Test prop parent component
+const productPromoProp = "Sale";
+//Main page exported to index.js for movement to the browser.
 function App() {
+  const isLoggedIn = true; // Set this based on whether the user is logged in or not
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainHeader isLoggedIn={isLoggedIn} />
+      <LandingPageComponent/>
+      <ProductComponent productPromoProp = {productPromoProp}/>
+      
     </div>
   );
 }

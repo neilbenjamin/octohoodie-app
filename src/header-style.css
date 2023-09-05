@@ -1,0 +1,37 @@
+
+.company-logo {
+  width: 70%;
+}
+
+.top-container {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.product-thumbnail {
+  padding: 2%;
+}
+
+/* Landing Page Component */
+.landing-card {
+  margin: 5%;
+  background-color: #7abcff; /* Set your desired background color */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding for content spacing */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.landing-card .card-title {
+  font-size: 2rem; /* Customize title font size */
+}
+
+.landing-card .card-text {
+  font-size: 1.2rem; /* Customize text font size */
+}
+
+.landing-card .btn-primary {
+  background-color: #007bff; /* Customize button background color */
+  border-color: #007bff; /* Customize button border color */
+  font-size: 1.2rem; /* Customize button font size */
+}
